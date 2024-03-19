@@ -3,11 +3,17 @@
   margin: 0;
   font-family: sans-serif;
 }
+.wrapper{
+  border: 3px solid #d6d052;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 10px 5px 10px;
+}
 .grid {
   display: grid;
   justify-content: space-between;
   align-items: center;
-  grid-template-columns: 30% 40% auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .flex-logo {
   display: flex;
@@ -23,8 +29,7 @@ header {
   color: white;
   height: 90vh;
   background-color: blue;
-  clip-path: polygon(0% 0, 100% 0, 100% 80%, 0 50%);
-}
+ }
 header a {
   text-decoration: none;
   color: white;
@@ -32,8 +37,46 @@ header a {
   display: inline-block;
   padding: 0.3rem 1rem;
 }
+a:active{
+  border-bottom:2px solid orange;
+}
 .w-form-icon {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  /* border:2px solid red; */
+} 
+input[name='seach']{
+  height: 35px;
+  width: 300px;
+   padding: 0 10px;
+  border:0;
+  outline: none;
+}
+i.fas{
+background: red;
+height: 35px;
+display: grid;
+grid-template-columns: 100%;
+justify-content: center;
+align-items: center;
+padding: 0 10px;
+}
+i.fa-brands{
+  /* border: 2px solid red; */
+  font-size: 30px;
+}
+
+@media(max-width: 769px){
+  .grid {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px ;
+  }
 }
