@@ -141,9 +141,7 @@ i.fa-search {
 }
 
 @media(max-width: 1100px) {
-  body {
-    background: red;
-  }
+ 
 
   .menu-mobile {
     display: block;
@@ -165,10 +163,7 @@ i.fa-search {
 }
 
 @media(max-width: 759px) {
-  body {
-    background: green;
-  }
-
+   
   .menu-mobile {
     display: block;
     color: var(--cor-branca);
@@ -186,4 +181,20 @@ i.fa-search {
   .box-links {
     display: none;
   }
+  section.hero{
+    min-height:100vh;
+    background:var(--cor-ceu);
+  }
+  .wrapper-hero img{
+    margin:0 auto;
+  }
+  .wrapper-hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    }
+   span.link-btn-hero{
+    margin:20px auto;
+   }
 }
